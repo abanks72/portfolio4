@@ -1,0 +1,71 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    Margin: 0;
+}
+
+.sections {
+    width: 100%;
+    height: 100%;
+}
+
+.header_area .navbar {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.6rem;
+}
+
+.fa-affiliatetheme {
+    color: white;
+    font-size: 40px;
+}
+
+.intro {
+    font-family: "Montserrat";
+    font-weight: 800;
+}
+
+.intro2 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #C4C4C4;
+}
+
+.cta_area {
+    padding-top: 10%;
+}
+
+.cta_text {
+    padding-left: 20%;
+    padding-top: 5%;
+}
+
+.cta_image {
+    padding-left: 15%;
+}
+
+
+.firstsec {
+    background-color: #102F37;
+}
+
+.secondsec {
+    border: 5px solid black;
+}
+
+.thirdsec {
+    border: 5px solid black;
+}
+
+.fourthsec {
+    border: 5px solid black;
+}
+
+.fifthsec {
+    background-color: #102F37;
+}
