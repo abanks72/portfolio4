@@ -1,71 +1,123 @@
 html,
 body {
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-    Margin: 0;
+  margin: 0;
 }
 
 .sections {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .header_area .navbar {
-    font-family: "Montserrat";
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 0.6rem;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.6rem;
 }
 
 .fa-affiliatetheme {
-    color: white;
-    font-size: 40px;
+  color: white;
+  font-size: 40px;
 }
 
 .intro {
-    font-family: "Montserrat";
-    font-weight: 800;
+  font-family: "Montserrat";
+  font-weight: 800;
 }
 
 .intro2 {
-    font-family: "Montserrat";
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #C4C4C4;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #c4c4c4;
 }
 
 .cta_area {
-    padding-top: 10%;
+  padding-top: 10%;
 }
 
 .cta_text {
-    padding-left: 20%;
-    padding-top: 5%;
+  padding-left: 20%;
+  padding-top: 5%;
 }
 
 .cta_image {
-    padding-left: 15%;
+  padding-left: 15%;
 }
 
+.aboutmeintro {
+  padding-top: 5%;
+}
+
+#content {
+  margin: 4em auto;
+  display: flex;
+  width: 90%;
+  line-height: 25px;
+}
+
+#content .box {
+  text-align: center;
+}
+
+.content-header {
+  text-align: center;
+  justify-content: center;
+}
+
+.aboutme {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 2rem;
+  color: #454545;
+}
+
+.aboutmetext {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.055em;
+  padding-top: 5px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.horline1 {
+  width: 130px;
+  border: 6px solid;
+  color: #454545;
+  background-color: #454545;
+}
 
 .firstsec {
-    background-color: #102F37;
+  background-color: #102f37;
 }
 
 .secondsec {
-    border: 5px solid black;
+  border: 5px solid black;
+  padding-bottom: 30%;
 }
 
 .thirdsec {
-    border: 5px solid black;
+  border: 5px solid black;
 }
 
 .fourthsec {
-    border: 5px solid black;
+  border: 5px solid black;
 }
 
 .fifthsec {
-    background-color: #102F37;
+  background-color: #102f37;
 }
