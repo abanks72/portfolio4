@@ -4,6 +4,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+  font-family: "Montserrat";
 }
 
 body {
@@ -16,7 +17,6 @@ body {
 }
 
 .header_area .navbar {
-  font-family: "Montserrat";
   text-transform: uppercase;
   font-weight: 700;
   padding: 0.6rem;
@@ -28,12 +28,10 @@ body {
 }
 
 .intro {
-  font-family: "Montserrat";
   font-weight: 800;
 }
 
 .intro2 {
-  font-family: "Montserrat";
   font-weight: 600;
   font-size: 1.2rem;
   color: #c4c4c4;
@@ -102,7 +100,7 @@ body {
 }
 
 .firstsec {
-  background-color: #102f37;
+  background-color: #454545;
 }
 
 .secondsec {
@@ -120,4 +118,93 @@ body {
 
 .fifthsec {
   background-color: #102f37;
+}
+
+#section2 {
+  background-color: #102f37;
+
+}
+
+
+
+/* Portfolio Old */
+
+/* Navigation */
+.navbar-nav {
+  font-size: 100%;
+  padding: 2px;
+}
+
+.nav-item {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.border {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+/* Hero */
+.jumbotron {
+  height: 100vh;
+  background-image: url(back.png);
+  background-size: cover;
+  margin: 0px;
+}
+
+
+.text-left {
+  color: white;
+}
+
+.hrstyle-1 {
+  width: 40%;
+  margin: 0px;
+  border-color: white;
+}
+
+/* Section Two */
+
+.hrstyle-2 {
+  width: 25%;
+  border-color: white;
+}
+
+/* Section Three */
+.wrapper-section-three {
+  width: 100%;
+  background-color: grey;
+}
+
+/* Footer */
+#copy {
+  margin: 0;
+  color: white;
+}
+
+/* Utilites */
+.soc-icons {
+  height: 5%;
+  width: 5%;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.img-hover:hover {
+  background-color: yellow;
+}
+
+.cursor-point {
+  cursor: pointer;
+}
+
+
+
+/* Hokela */
+
+@media screen and (max-width: 600px) {
+  #content {
+    flex-direction: column;
+  }
 }
