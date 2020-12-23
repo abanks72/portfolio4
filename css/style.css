@@ -27,6 +27,12 @@ body {
   font-size: 40px;
 }
 
+.jumbotron {
+  height: 100vh;
+  background-color: #102f37;
+  background-size: cover;
+  margin: 0px;
+}
 .intro {
   font-weight: 800;
 }
@@ -35,23 +41,6 @@ body {
   font-weight: 600;
   font-size: 1.2rem;
   color: #c4c4c4;
-}
-
-.cta_area {
-  padding-top: 10%;
-}
-
-.cta_text {
-  padding-left: 20%;
-  padding-top: 5%;
-}
-
-.cta_image {
-  padding-left: 15%;
-}
-
-.aboutmeintro {
-  padding-top: 5%;
 }
 
 #content {
@@ -122,10 +111,7 @@ body {
 
 #section2 {
   background-color: #102f37;
-
 }
-
-
 
 /* Portfolio Old */
 
@@ -152,7 +138,6 @@ body {
   background-size: cover;
   margin: 0px;
 }
-
 
 .text-left {
   color: white;
@@ -198,8 +183,6 @@ body {
 .cursor-point {
   cursor: pointer;
 }
-
-
 
 /* Hokela */
 
