@@ -16,6 +16,59 @@ body {
   height: 100%;
 }
 
+.logo {
+  position: fixed;
+  float: left;
+  margin: 9px 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.menu-icon {
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
 .header_area .navbar {
   text-transform: uppercase;
   font-weight: 700;
@@ -29,11 +82,12 @@ body {
 
 .jumbotron {
   height: 100vh;
-  background-color: #102f37;
+  background-image: url(back.png);
   background-size: cover;
   margin: 0px;
 }
-.intro {
+
+.intro1 {
   font-weight: 800;
 }
 
@@ -131,14 +185,6 @@ body {
   margin-right: 12px;
 }
 
-/* Hero */
-.jumbotron {
-  height: 100vh;
-  background-image: url(back.png);
-  background-size: cover;
-  margin: 0px;
-}
-
 .text-left {
   color: white;
 }
@@ -184,10 +230,55 @@ body {
   cursor: pointer;
 }
 
+.intro {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-image: url(wowe.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
 /* Hokela */
 
 @media screen and (max-width: 600px) {
   #content {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+
+  nav ul {
+    max-height: 0px;
+    background: #000;
+  }
+
+  nav.black ul {
+    background: #000;
+  }
+
+  .showing {
+    max-height: 20em;
+  }
+
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
   }
 }
