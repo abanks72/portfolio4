@@ -7,20 +7,7 @@ body {
   font-family: "Montserrat";
 }
 
-.sections {
-  width: 100%;
-  height: 100%;
-}
-
 /* Navigation Bar */
-.logo {
-  position: fixed;
-  float: left;
-  margin: 9px 20px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 24px;
-}
 
 nav {
   position: fixed;
@@ -57,21 +44,14 @@ nav ul li a {
   font-size: 15px;
 }
 
-.menu-icon {
-  width: 100%;
-  background: #000;
-  text-align: right;
-  box-sizing: border-box;
-  padding: 15px 24px;
-  cursor: pointer;
-  color: #fff;
-  display: none;
+.activelink:active {
+  color: #9bddaf !important;
 }
-
-.header_area .navbar {
-  text-transform: uppercase;
-  font-weight: 700;
-  padding: 0.6rem;
+.activelink:focus {
+  color: #9bddaf !important;
+}
+.activelink:hover {
+  color: #61c77f !important;
 }
 
 /* First Section */
@@ -88,16 +68,21 @@ nav ul li a {
   padding: 0 20px;
 }
 
-.containerbro {
+.wrapper-1 {
   padding-right: 800px;
 }
-.intro1 {
+
+.h-text-1 {
   font-size: 3.4rem;
   font-weight: 800;
-  -webkit-text-stroke: 2px #b1b1b1;
+  color: white;
 }
 
-.intro2 {
+.h-text-2 {
+  color: rgb(192, 221, 198);
+}
+
+.h-text-3 {
   font-weight: 600;
   font-size: 1.2rem;
   color: #c4c4c4;
@@ -105,37 +90,49 @@ nav ul li a {
   word-wrap: break-word;
 }
 
-.secondtext {
-  color: antiquewhite;
-}
-
-.buttonstyle {
+.h-button {
   background-color: #202421;
   border-color: #61c77f;
+  border-width: 2px;
 }
 
-.buttonstyle:hover {
-  background-color: white;
-  color: black;
+.h-button:hover {
+  background-color: rgb(90, 90, 90);
+  color: rgb(255, 255, 255);
+  border-color: #61c77f;
   transition: all 0.4s ease 0s;
 }
 
-.example_c {
-  color: #494949 !important;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #ffffff;
-  padding: 20px;
-  border: 4px solid #494949 !important;
-  display: inline-block;
+.modalbutton {
+  background-color: #202421;
+  border-color: #202421;
+  border-width: 2px;
+}
+
+.modalbutton:hover {
+  background-color: rgb(90, 90, 90);
+  color: rgb(255, 255, 255);
+  border-color: #61c77f;
+  border-width: 2px;
   transition: all 0.4s ease 0s;
 }
 
-.example_c:hover {
-  color: #ffffff !important;
-  background: #f6b93b;
-  border-color: #f6b93b !important;
-  transition: all 0.4s ease 0s;
+.buttonstyle:active {
+  color: white;
+}
+
+.btn:focus {
+  background: #878885 !important;
+  outline: none;
+  box-shadow: none !important;
+  border-color: #61c77f !important;
+}
+
+.btn:active {
+  background: #878885 !important;
+  outline: none;
+  box-shadow: none !important;
+  border-color: #61c77f !important;
 }
 
 /* Second Section */
@@ -165,6 +162,14 @@ nav ul li a {
   background-color: #454545;
 }
 
+.horline2 {
+  width: 400px;
+  border: 1px solid;
+  color: #454545;
+  background-color: #454545;
+  margin: 0px;
+}
+
 .imgsize {
   height: 150px;
   width: 150px;
@@ -182,16 +187,6 @@ nav ul li a {
   text-align: center;
 }
 
-.card {
-  padding: 5px;
-  border-width: 3px;
-  border-radius: 3%;
-  /*background-color: aliceblue;*/
-}
-
-.card-img-top {
-  border-radius: 3%;
-}
 .content-header {
   text-align: center;
   justify-content: center;
@@ -270,18 +265,103 @@ input[type="text"] {
   padding: 20px;
 }
 
+.socialMediaLinks a {
+  background: #ffc0c0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 30px;
+}
+
+.icon-background {
+  color: rgb(255, 255, 255);
+}
+
 .yeet {
   background-color: #1f1f1f;
 }
 
+.fab,
+.fas {
+  color: rgb(0, 0, 0);
+}
+
+.fab:hover,
+.fas:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.card-title {
+  font-weight: 600;
+}
+.card-text {
+  font-weight: 500;
+  font-style: italic;
+  color: #454545;
+}
+
+.textarena {
+  height: 150px;
+}
+
+.modal-title {
+  font-size: 30px;
+}
 .footer {
   color: white;
   padding: 14px;
   background-color: black;
   text-align: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #content {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .containerbro {
+    padding-right: 0px;
+  }
+  .wrapper-1 {
+    padding-right: 0px;
+  }
+  .intro {
+    text-align: center;
+  }
+  nav ul {
+    padding-left: 0px;
+    text-align: center;
   }
 }
